@@ -1,21 +1,27 @@
 <div class="container">
+  <hr />
   <h1 class="well">Shopping Cart</h1>
   <hr />
-  <p>Your cart is empty</p>
-  <table>
-    <tr>
-      <th>Item</th>
-      <th>Quantity</th>
-      <th>Total</th>
-    </tr>
-    <tr>
-      <td><!--{{ item.title }}--></td>
-      <td><!--{{ item.quantity }}--></td>
-      <td><!--{{ item.total }}--></td>
-    </tr>
-  </table>
-  <h4>
-    Total:
-    <!--{{ total.toFixed(2) }}-->
-  </h4>
+
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="firstname">Name</label><br />
+
+        <input type="text" name="firstname" class="form-control" ngModel />
+      </div>
+
+      <pre></pre>
+
+      <div class="form-group">
+        <label for="lastname">Address</label><br />
+
+        <input type="text" name="lastname" class="form-control" ngModel />
+      </div>
+
+      <pre></pre>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
 </div>
