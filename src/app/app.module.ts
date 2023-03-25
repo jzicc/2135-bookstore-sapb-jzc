@@ -11,10 +11,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 
+import { CartService } from './cart.service';
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'cart', component: CartComponent },
+  { path: 'cart', component: CartComponent,  },
   { path: 'navbar', component: NavbarComponent },
   { path: 'footer', component: FooterComponent },
 ];
@@ -31,5 +33,6 @@ const routes: Routes = [
   ],
   bootstrap: [AppComponent],
   exports: [RouterModule],
+  providers: [CartService]
 })
 export class AppModule {}
